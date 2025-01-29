@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.sigmechanics.spark",
+    "module": "remote-shuffle",
+    "version": "1.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "remote-shuffle-1.5.0.jar",
+          "url": "remote-shuffle-1.5.0.jar",
+          "size": 83225,
+          "sha512": "fe5b36b0c1d2584dd204499027fdeacbd7f66cef4dd0fb2efeb5ebf654b486ba4ccf21a9bed4f74c67e5dccce0e7458251ec0644724f3bd8820ae1b9aff7af59",
+          "sha256": "d30c8f224bdd9d98811aaa79e9540a342d8fbb40f7702a7ee5df05b59e6c4597",
+          "sha1": "91c0e7bd17988140490552d29b314fe66f732b8f",
+          "md5": "d2c84875c81b6efcd4afbfbeed1f5959"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.scala-lang.modules",
+          "module": "scala-collection-compat_2.13",
+          "version": {
+            "requires": "2.12.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "remote-shuffle-1.5.0.jar",
+          "url": "remote-shuffle-1.5.0.jar",
+          "size": 83225,
+          "sha512": "fe5b36b0c1d2584dd204499027fdeacbd7f66cef4dd0fb2efeb5ebf654b486ba4ccf21a9bed4f74c67e5dccce0e7458251ec0644724f3bd8820ae1b9aff7af59",
+          "sha256": "d30c8f224bdd9d98811aaa79e9540a342d8fbb40f7702a7ee5df05b59e6c4597",
+          "sha1": "91c0e7bd17988140490552d29b314fe66f732b8f",
+          "md5": "d2c84875c81b6efcd4afbfbeed1f5959"
+        }
+      ]
+    }
+  ]
+}
