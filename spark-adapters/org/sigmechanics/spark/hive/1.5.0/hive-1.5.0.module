@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.sigmechanics.spark",
+    "module": "hive",
+    "version": "1.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "hive-1.5.0.jar",
+          "url": "hive-1.5.0.jar",
+          "size": 6522,
+          "sha512": "d82e2f98503acf5d584e74f3046a256e4b5cb9a48f790398b4aeb41254ef9c1c131c47d7fc53da9a364aab8d14b1669a7a9a46b23881379e53e14d02718e885f",
+          "sha256": "9e82de511983f2b8275c1860c484361a3a913bd82175db087b1ef2ef8c233e1c",
+          "sha1": "2bebe1436255efc1abeb71779ce6764198629270",
+          "md5": "c193ad589cdfa5f84454708ad652d7a0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "hive-1.5.0.jar",
+          "url": "hive-1.5.0.jar",
+          "size": 6522,
+          "sha512": "d82e2f98503acf5d584e74f3046a256e4b5cb9a48f790398b4aeb41254ef9c1c131c47d7fc53da9a364aab8d14b1669a7a9a46b23881379e53e14d02718e885f",
+          "sha256": "9e82de511983f2b8275c1860c484361a3a913bd82175db087b1ef2ef8c233e1c",
+          "sha1": "2bebe1436255efc1abeb71779ce6764198629270",
+          "md5": "c193ad589cdfa5f84454708ad652d7a0"
+        }
+      ]
+    }
+  ]
+}

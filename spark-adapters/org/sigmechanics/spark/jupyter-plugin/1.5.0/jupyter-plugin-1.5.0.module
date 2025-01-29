@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.sigmechanics.spark",
+    "module": "jupyter-plugin",
+    "version": "1.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "jupyter-plugin-1.5.0.jar",
+          "url": "jupyter-plugin-1.5.0.jar",
+          "size": 21404,
+          "sha512": "70206df9b8c132aa1a6db9b151b7a091198bdc4e04652680759e401d3c42daedb6c99af62999291bbea4179356ec1911348afc236fa17d50a002281ae80f5c54",
+          "sha256": "afc8eaa8d6c3aa6052916dd0ea12888161c0a5fc3d4c375ede2b62b1e6f1b863",
+          "sha1": "419029aac81f40b0a9ac174bb369a9faae10bcc4",
+          "md5": "45085ad4c3497bd2f09bc2161d815bcc"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.sigmechanics.spark",
+          "module": "common",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "org.sigmechanics.spark",
+          "module": "tools",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "io.fabric8",
+          "module": "kubernetes-client",
+          "version": {
+            "requires": "7.0.1"
+          }
+        },
+        {
+          "group": "org.apache.spark",
+          "module": "spark-core_2.13",
+          "version": {
+            "requires": "3.5.4"
+          }
+        },
+        {
+          "group": "org.apache.spark",
+          "module": "spark-sql_2.13",
+          "version": {
+            "requires": "3.5.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "jupyter-plugin-1.5.0.jar",
+          "url": "jupyter-plugin-1.5.0.jar",
+          "size": 21404,
+          "sha512": "70206df9b8c132aa1a6db9b151b7a091198bdc4e04652680759e401d3c42daedb6c99af62999291bbea4179356ec1911348afc236fa17d50a002281ae80f5c54",
+          "sha256": "afc8eaa8d6c3aa6052916dd0ea12888161c0a5fc3d4c375ede2b62b1e6f1b863",
+          "sha1": "419029aac81f40b0a9ac174bb369a9faae10bcc4",
+          "md5": "45085ad4c3497bd2f09bc2161d815bcc"
+        }
+      ]
+    }
+  ]
+}

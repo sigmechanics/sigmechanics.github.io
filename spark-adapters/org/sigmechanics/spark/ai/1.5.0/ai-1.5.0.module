@@ -1,0 +1,90 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.sigmechanics.spark",
+    "module": "ai",
+    "version": "1.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ai-1.5.0.jar",
+          "url": "ai-1.5.0.jar",
+          "size": 5287,
+          "sha512": "77c1ce52b9d9f827bb1b6dbb6d11dbaf3317fa5f2fe1a17840989207dc33c8b28444f9762aad5b548f1905422e941c510168bbfd845abc214911e0aac9f28ef5",
+          "sha256": "ba859495453ed39a85f2fdc9419a1a1c80699ab57940c0c326ae531d1c950448",
+          "sha1": "986e6ae5ef2125bf4d94bd1aba38264fd9430982",
+          "md5": "a10867d4197d6d450497372b01642782"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.sigmechanics.spark",
+          "module": "common",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "org.sigmechanics.spark",
+          "module": "tools",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "org.apache.spark",
+          "module": "spark-core_2.13",
+          "version": {
+            "requires": "3.5.4"
+          }
+        },
+        {
+          "group": "org.apache.spark",
+          "module": "spark-sql_2.13",
+          "version": {
+            "requires": "3.5.4"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ai-1.5.0.jar",
+          "url": "ai-1.5.0.jar",
+          "size": 5287,
+          "sha512": "77c1ce52b9d9f827bb1b6dbb6d11dbaf3317fa5f2fe1a17840989207dc33c8b28444f9762aad5b548f1905422e941c510168bbfd845abc214911e0aac9f28ef5",
+          "sha256": "ba859495453ed39a85f2fdc9419a1a1c80699ab57940c0c326ae531d1c950448",
+          "sha1": "986e6ae5ef2125bf4d94bd1aba38264fd9430982",
+          "md5": "a10867d4197d6d450497372b01642782"
+        }
+      ]
+    }
+  ]
+}

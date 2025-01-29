@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.sigmechanics.spark",
+    "module": "vscode-plugin",
+    "version": "1.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "vscode-plugin-1.5.0.jar",
+          "url": "vscode-plugin-1.5.0.jar",
+          "size": 16885,
+          "sha512": "7dd7ea89f1f5e76fed808d0f4cfbd5b594ad51266a3e5e1c07ef08b4096ee3b95ac95d80b9d24f706941000d098300f19067ec47d31186eb4ffec387d943f802",
+          "sha256": "2871a2b5752415d3addc4599ffca4042dfdec1da5ce11becf94942460ba3d081",
+          "sha1": "0a6ac11e45693f178402327be3c4e4081a00f1bd",
+          "md5": "a88dd01034fa26f2d2fd1040e8289d13"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.sigmechanics.spark",
+          "module": "common",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "org.sigmechanics.spark",
+          "module": "tools",
+          "version": {
+            "requires": "1.5.0"
+          }
+        },
+        {
+          "group": "io.undertow",
+          "module": "undertow-core",
+          "version": {
+            "requires": "2.3.18.Final"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "vscode-plugin-1.5.0.jar",
+          "url": "vscode-plugin-1.5.0.jar",
+          "size": 16885,
+          "sha512": "7dd7ea89f1f5e76fed808d0f4cfbd5b594ad51266a3e5e1c07ef08b4096ee3b95ac95d80b9d24f706941000d098300f19067ec47d31186eb4ffec387d943f802",
+          "sha256": "2871a2b5752415d3addc4599ffca4042dfdec1da5ce11becf94942460ba3d081",
+          "sha1": "0a6ac11e45693f178402327be3c4e4081a00f1bd",
+          "md5": "a88dd01034fa26f2d2fd1040e8289d13"
+        }
+      ]
+    }
+  ]
+}
