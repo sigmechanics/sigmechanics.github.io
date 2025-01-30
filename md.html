@@ -8,7 +8,7 @@
   <div id="content"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
-    fetch('/web/README.md')
+    fetch('/README.md')
             .then(response => response.text())
             .then(markdown => {
                 // Convert Markdown to HTML
