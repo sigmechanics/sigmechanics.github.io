@@ -54949,7 +54949,7 @@ q=$.adv()
 p=new A.Yf(s)
 $.JG().m(0,p,q)
 A.a55(p,q,!0)
-p.kW(new A.qP(A.fg(A.a5A().k(0)+"/md.html")))
+p.kW(new A.qP(A.fg(A.a5A().k(0)+"/sigm.html")))
 return new A.Fy(p)}}
 A.Fy.prototype={
 S(a){var s,r,q=this,p=null
@@ -54959,7 +54959,7 @@ s=A.a9J(A.b([new A.qs(new A.oS("images/icon.png"),40,40,p),A.a5q("SigMechanics",
 $.a5C.toString
 r=A.akF(new A.TY(q.e))
 A.a55(r,$.a6F(),!0)
-return new A.t3(new A.oP(s,B.K,new A.Gw(p,p,1/0,56),p),A.KX(A.a7y(A.ahB(p,p,r.a.b.a.b.id),p,p,p,p,800),p,p),p)}}
+return new A.t3(new A.oP(s,B.K,new A.Gw(p,p,1/0,56),p),A.KX(A.a7y(A.ahB(p,p,r.a.b.a.b.id),p,p,p,p,1280),p,p),p)}}
 A.a0m.prototype={
 $0(){return this.a.e.kW(new A.qP(A.fg(A.a5A().k(0)+"/sigm.html")))},
 $S:0}
