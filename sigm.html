@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigmasoft - Revolutionizing Data Processing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: 'Roboto';
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sigmasoft: Revolutionizing Data Processing with Advanced Spark Adapters</h1>
+        <p><strong>Sigmasoft</strong> is at the forefront of innovation, providing a comprehensive suite of tools and plugins for Apache Spark. Our solutions are designed to enhance the capabilities of Spark applications, particularly in Kubernetes environments, and support polyglot notebooks for diverse data processing needs.</p>
+        
+        <h2>Key Offerings:</h2>
+        <ul>
+            <li>
+                <h3>Spark Adapters:</h3>
+                <p>Our collection of Spark adapters includes remote shuffle support and the Spark Connect plugin, enabling seamless integration and enhanced performance in Kubernetes using the Kubeflow Spark Operator. Access our adapters from the <a href="https://sigmechanics.github.io/spark-adapters">Maven repository</a>.</p>
+            </li>
+            <li>
+                <h3>Docker Images:</h3>
+                <p>We offer Apache Spark Docker images pre-configured with SigMechanics plugin dependencies, available on <a href="https://hub.docker.com/repository/docker/sigmechanics/spark/general">Docker Hub</a>:</p>
+                <ul>
+                    <li>sigmechanics/spark:3.5.4-2.12</li>
+                    <li>sigmechanics/spark:3.5.4-2.13</li>
+                    <li>sigmechanics/spark:4.0.0-preview2-2.13</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Remote Shuffle:</h3>
+                <p>Our remote shuffle storage feature supports storing Spark shuffle data on major cloud providers (S3, Google Cloud Storage, Azure Cloud Storage). Configure your Spark application with:</p>
+                <pre><code>spark.shuffle.manager: org.apache.spark.shuffle.sort.RemoteShuffleManager
+spark.shuffle.sort.io.plugin.class: org.apache.spark.shuffle.RemoteShuffleDataIO
+spark.shuffle.remote.rootDir: [local or cloud storage URI, e.g., s3a://mybucket/]</code></pre>
+            </li>
+            <li>
+                <h3>Hive Integration:</h3>
+                <p>The Hive project provides a wrapper for the Spark HiveThriftServer2, enabling its use in Spark cluster mode (Kubernetes). Easily query Hive tables using JDBC data sources:</p>
+                <pre><code>df = spark.format("jdbc").option("url", "jdbc:hive2://hive-server:10000").option("dbtable", "mytable").load()</code></pre>
+            </li>
+            <li>
+                <h3>Spark Connect:</h3>
+                <p>Our Spark Connect project includes a wrapper for the SparkConnectServer, facilitating its use in Kubernetes. Alternatively, launch Spark Connect as a plugin:</p>
+                <pre><code>sparkConf: {
+    spark.plugins: org.apache.spark.sql.connect.SparkConnectPlugin
+}</code></pre>
+            </li>
+            <li>
+                <h3>Ray Integration:</h3>
+                <p>The Ray plugin dynamically installs and runs Ray on Spark clusters, enhancing distributed computing capabilities. Launch Ray as a plugin with:</p>
+                <pre><code>sparkConf: {
+    spark.plugins: org.sigmechanics.spark.RayPlugin
+}</code></pre>
+            </li>
+            <li>
+                <h3>Jupyter Integration:</h3>
+                <p>The Jupyter plugin enables dynamic installation and launching of Jupyter Lab on any Spark image with Python installed. Configure your Spark application with:</p>
+                <pre><code>sparkConf: {
+    spark.plugins: org.sigmechanics.spark.JupyterPlugin,
+    spark.jupyter.work.dir: /opt/spark/work-dir
+}</code></pre>
+            </li>
+        </ul>
+        
+        <h2>Limitations:</h2>
+        <p>Requires JDK 11+</p>
+        
+        <p>Sigmasoft is committed to empowering data engineers and scientists with cutting-edge tools that streamline data processing and enhance productivity. Explore our offerings and elevate your Spark applications to new heights.</p>
+        
+        <p>For more information, visit our <a href="https://sigmechanics.github.io/spark-adapters">Maven repository</a> and <a href="https://hub.docker.com/repository/docker/sigmechanics/spark/general">Docker Hub</a>.</p>
+    </div>
+</body>
+</html>
