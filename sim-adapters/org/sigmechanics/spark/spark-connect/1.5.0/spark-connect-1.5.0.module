@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.sigmechanics.spark",
+    "module": "spark-connect",
+    "version": "1.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "spark-connect-1.5.0.jar",
+          "url": "spark-connect-1.5.0.jar",
+          "size": 1060,
+          "sha512": "a9f5b16be5c7e51126f4ed266de405dd56bcbdf0bd6e14fa7dfbc76a628664cf6488a8f3615100439280f466df59f4be99b7ee30bd1be39d7d61463713468b36",
+          "sha256": "4d1415e07e3c2929bbcfb5d1a6c5bc995f7d698be8323eab0b6e65350e50dfdc",
+          "sha1": "750cec03bdbfd8d31c3c07cc8f9a394dbcb0f72a",
+          "md5": "59ce28cc1b9ec55c592b3cb00b53fb95"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spark-connect-1.5.0.jar",
+          "url": "spark-connect-1.5.0.jar",
+          "size": 1060,
+          "sha512": "a9f5b16be5c7e51126f4ed266de405dd56bcbdf0bd6e14fa7dfbc76a628664cf6488a8f3615100439280f466df59f4be99b7ee30bd1be39d7d61463713468b36",
+          "sha256": "4d1415e07e3c2929bbcfb5d1a6c5bc995f7d698be8323eab0b6e65350e50dfdc",
+          "sha1": "750cec03bdbfd8d31c3c07cc8f9a394dbcb0f72a",
+          "md5": "59ce28cc1b9ec55c592b3cb00b53fb95"
+        }
+      ]
+    }
+  ]
+}
